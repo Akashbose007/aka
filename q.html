@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            ASCII VALUE
+        </title>
+
+        <style >
+            body {
+                background-color: rgb(172, 83, 255);
+                text-align: center;
+
+            }
+            #c1{
+                background-color: rgb(241, 50, 225);
+                border-radius: 20px;
+                
+                padding: 10px;
+               margin: auto;
+               height: 600px;
+               width: 40%;
+               
+            }
+            
+        </style>
+        <body>
+            <div id="c1">
+          <h1 style=" font-style: oblique;font-size: 80px;">
+              ASCII VALUE
+          </h1>
+          
+          <p >
+              <label style="font-size: 40px;">Enter the character</label>
+              <br>
+              <br>
+              <input type = "text" id = "two" oninput = "Converter(this.value)" onchange = "Converter(this.value)">
+          </p>
+            <p style="font-size: 30px;">  <br><span id="val" style="font-size: 130px;"></span> </p>
+            </div>
+            <script>
+                
+               
+                function Converter(x)
+                {
+                    var y;
+                  y=x.charCodeAt(0);
+                  document.getElementById("val").innerHTML=y;
+                }
+            </script>
+
+        </body>
+        
+    </head>
+</html>
